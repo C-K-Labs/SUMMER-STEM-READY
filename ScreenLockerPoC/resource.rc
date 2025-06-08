@@ -1,7 +1,0 @@
-#include <windows.h>
-
-// Application icon (PDF document style)
-1 ICON "assets/document.ico"
-
-// Embed remover.exe as a binary resource
-101 RCDATA "remover/Debug/remover.exe"
