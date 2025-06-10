@@ -1,0 +1,19 @@
+{
+  "users": {
+    "50-v5sv2-2": {
+      "status": "unlocked",
+      "mac_address": "50",
+      "registered_at": "2025-06-10T17:00:57.920649",
+      "last_seen": "2025-06-10T17:00:57.920659",
+      "admin_fixed": true,
+      "updated_at": "2025-06-10T17:01:16.276858"
+    },
+    "50-o_g894-k": {
+      "status": "locked",
+      "mac_address": "50",
+      "registered_at": "2025-06-10T17:04:03.420569",
+      "last_seen": "2025-06-10T17:04:16.875546",
+      "admin_fixed": false
+    }
+  }
+}
